@@ -1,0 +1,268 @@
+body {
+    background-color: #908C8B;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    margin-top:0;
+    z-index: 1000; /*z-index plus élevé que celui par défaut (0) pour que les images passent derrière la bannière */
+}
+
+/* style du texte contenu dans "header" */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style pour les titres */
+h1{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive	;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Style pour les images */
+
+img#profil{
+    position: absolute;
+    width: 220px;
+    height: auto;
+    top: 105px;
+    left: 1600px;
+    border-radius: 10px 10px;
+}
+
+img#point_p {
+    position: relative;
+    width: 150px;
+    top: 40px;
+    border-radius: 10px 10px;
+}
+
+img#presse{
+    position: relative;
+    width: 110px;
+    top: 45px;
+    border-radius: 5px 5px;
+}
+
+img#cone{
+    position: relative;
+    width: 90px;
+    top: 40px;
+    border-radius: 5px 5px;
+}
+
+img#reseau{
+    position: relative;
+    width: 600px;
+    top: 10px;
+    border-radius: 10px 10px;
+}
+
+img#programme{
+    position: relative;
+    width: 600px;
+    top: 10px;
+    border-radius: 10px 10px;
+}
+
+img#resultat{
+    position: relative;
+    top: 10px;
+    border-radius: 5px 5px;
+}
+
+img#ethernet{
+    position: relative;
+    width: 600px;
+    top: 10px;
+    border-radius: 10px 10px;
+}
+
+img#plan{
+    position: relative;
+    width: 400px;
+    top: -10px;
+    border-radius: 5px 5px;
+}
+
+img#fibre{
+    position: relative;
+    width: 500px;
+    top: -10px;
+    border-radius: 5px 5px;
+}
+
+img#fibre_test{
+    position: relative;
+    width: 500px;
+    top: 10px;
+    border-radius: 5px 5px;
+}
+
+img#liste{
+    position: relative;
+    width: 180px;
+    border-radius: 10px 10px;
+}
+
+img#f1{
+    position: relative;
+    width: 90px;
+    top: 5px;
+}
+
+img#motogp{
+    position: relative;
+    width: 90px;
+    top: 16px;
+    border-radius: 5px 5px;
+}
+
+video {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+/* Style pour le lien de l'adresse */
+
+a#adresse{
+    color: black;
+    text-decoration: none;
+}
+
+a#adresse:hover{
+    color: grey;
+    
+}
+
+a#adresse:visited{
+    color: #8C8C8C;
+}
+
+/* Style pour le lien du CV */
+
+a#cv{
+    color: black;
+    text-decoration: none;
+}
+
+a#cv:hover{
+    color: grey;
+}
+
+a#cv:visited{
+    color: #8C8C8C;
+}
+
+
+/* Style pour le lien linkedin */
+
+a#linkedin{
+    color: black;
+    text-decoration: none;
+}
+
+a#linkedin:hover{
+    color: grey;
+}
+
+a#linkedin:visited{
+    color: #8C8C8C;
+}
+
+
+
+/* style pour chaque section */
+section {
+    color: black;
+    margin: 40px 20px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    background: #EBEBEB;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* style pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* JAUGE */
+
+label {
+    text-align: right; 
+    margin-right: 12px; /* Ajoute un espacement entre le libellé et la jauge */
+}
+
+progress {
+    width: 15%;
+    height: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: white; /* Couleur de fond de la jauge */
+    margin-bottom: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white; /* Couleur de fond de la jauge pour les navigateurs WebKit (Chrome, Safari) */
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #7e7c7efd; /* Couleur de remplissage pour les navigateurs WebKit (Chrome, Safari) */
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #7e7c7efd; /* Couleur de remplissage pour les navigateurs Mozilla (Firefox) */
+    border-radius: 10px;
+}
+
+progress::-ms-fill {
+    background-color: #7e7c7efd; /* Couleur de remplissage pour les navigateurs Microsoft (Edge) */
+    border-radius: 10px;
+}
+
+/* Ajout d'une animation lors du remplissage de la jauge */
+progress[value] {
+    transition: width 0.5s ease-in-out;
+}
